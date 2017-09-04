@@ -3,8 +3,8 @@ Question table consist of columns Title, private, user_id
 Answer table consist of columns body, question_id, user_id
 Tenant table consist of name and api_key
 User table consist of name
-Populate the fake data in all tables using any library available in python/Django or any other framework.
-Accomplish the following tasks using Django or any other framework in python:
+# Populate the fake data in all tables using any library available in python/Django or any other framework.
+# Accomplish the following tasks using Django or any other framework in python:
 
 ·  Add a RESTful, read-only API to allow consumers to retrieve Questions with Answers as JSON (no need to retrieve Answers on their own). The response should include Answers inside their Question as well as include the id and name of the Question and Answer users.
 ·  Don't return private Questions in the API response.
@@ -16,3 +16,7 @@ Accomplish the following tasks using Django or any other framework in python:
 ·  Allow adding a query parameter to the API request to select only Questions that contain the query term(s). Return an appropriate HTML status code if no results are found.
 ·  Add a piece of middleware to throttle API requests on a per-Tenant basis. After the first 100 requests per day, throttle to 1 request per 10 seconds.
 ·  Use git as SCM tool and commit the code with proper commit messages
+
+# Populated data:
+1. Added data using django admin interface and
+2. python manage.py dumpdata qa |  python -m json.tool > qa/fixtures/initial.json

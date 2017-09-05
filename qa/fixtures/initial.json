@@ -1,6 +1,909 @@
 [
     {
         "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "app_label": "player",
+            "model": "player"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "app_label": "player",
+            "model": "gamemoves"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "app_label": "qa",
+            "model": "question"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "app_label": "qa",
+            "model": "answer"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "app_label": "qa",
+            "model": "tenant"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "app_label": "qa",
+            "model": "qauser"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "app_label": "qa",
+            "model": "apihitslog"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "expire_date": "2017-09-18T18:16:31.062Z",
+            "session_data": "Y2ZmMTc4YzQxODEwMmIyNDA1YzRhOTIwZjkzYTBiYTBmNzBmZTI0Njp7Il9hdXRoX3VzZXJfaGFzaCI6IjQxMzVmMDE1OTYyNjg3OGFiODJmYzg1OTRkMDcyZmM2MjRhZjc3ZDIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0="
+        },
+        "model": "sessions.session",
+        "pk": "tdp1ctvxefuxowe0vxbmho7xmj5hsdgj"
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "Why are fish so easy to weigh?",
+            "user": 1
+        },
+        "model": "qa.question",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "How you know that you are flying with a \"no frills\" airline?",
+            "user": 2
+        },
+        "model": "qa.question",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "Why do \"no frills\" airlines never show movies on their flights?",
+            "user": 3
+        },
+        "model": "qa.question",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "On a turkey, which side would you find most feathers?",
+            "user": 4
+        },
+        "model": "qa.question",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "Why is that all cats dislike flying saucers?",
+            "user": 2
+        },
+        "model": "qa.question",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "If a cat has nine lives, what has more?",
+            "user": 4
+        },
+        "model": "qa.question",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "Which ballet do pigs like best?",
+            "user": 3
+        },
+        "model": "qa.question",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "What is the big difference between chopped pork and pea soup?",
+            "user": 1
+        },
+        "model": "qa.question",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "Why is it that we don't eat clowns?",
+            "user": 4
+        },
+        "model": "qa.question",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "If you saw two cowboys in a kitchen, which would be the real one?",
+            "user": 1
+        },
+        "model": "qa.question",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "Where would you find a dog with one leg?",
+            "user": 3
+        },
+        "model": "qa.question",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "Why did the room packed with married people seem empty?",
+            "user": 1
+        },
+        "model": "qa.question",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "What's the difference between a pessimist and a magnet?",
+            "user": 2
+        },
+        "model": "qa.question",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "What is the longest sentence that a man knows?",
+            "user": 3
+        },
+        "model": "qa.question",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "What do you call a chicken that is crossing the road?",
+            "user": 4
+        },
+        "model": "qa.question",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "private": false,
+            "title": "What is a quicker way to transfer money than electronic banking?",
+            "user": 4
+        },
+        "model": "qa.question",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "body": "Because they have their own scales",
+            "question_id": 1,
+            "user": 2
+        },
+        "model": "qa.answer",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "body": "You need to have the correct change to board the plane.",
+            "question_id": 2,
+            "user": 4
+        },
+        "model": "qa.answer",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "body": "They don't need to. You keep seeing your life flashing before your very eyes.",
+            "question_id": 3,
+            "user": 2
+        },
+        "model": "qa.answer",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "body": "The outside",
+            "question_id": 4,
+            "user": 1
+        },
+        "model": "qa.answer",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "body": "Because it is impossible for them to reach the milk.",
+            "question_id": 5,
+            "user": 4
+        },
+        "model": "qa.answer",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "body": "A frog - it croaks every day.",
+            "question_id": 6,
+            "user": 4
+        },
+        "model": "qa.answer",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "body": "Swine Lake.",
+            "question_id": 7,
+            "user": 3
+        },
+        "model": "qa.answer",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "body": "Everybody can chop pork but everyone can't pea soup.",
+            "question_id": 8,
+            "user": 4
+        },
+        "model": "qa.answer",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "body": "They taste funny",
+            "question_id": 9,
+            "user": 1
+        },
+        "model": "qa.answer",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "body": "The one stood by the range.",
+            "question_id": 10,
+            "user": 4
+        },
+        "model": "qa.answer",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "body": "Exactly where you had left it.",
+            "question_id": 11,
+            "user": 2
+        },
+        "model": "qa.answer",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "body": "Because there wasn't a single person there.",
+            "question_id": 12,
+            "user": 4
+        },
+        "model": "qa.answer",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "body": "A magnet has a positive side.",
+            "question_id": 13,
+            "user": 4
+        },
+        "model": "qa.answer",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "body": "I do.",
+            "question_id": 14,
+            "user": 2
+        },
+        "model": "qa.answer",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "body": "Poultry in motion",
+            "question_id": 15,
+            "user": 4
+        },
+        "model": "qa.answer",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "body": "Marriage.",
+            "question_id": 16,
+            "user": 2
+        },
+        "model": "qa.answer",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "body": "Dont know",
+            "question_id": 13,
+            "user": 1
+        },
+        "model": "qa.answer",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "body": "Go figure.",
+            "question_id": 13,
+            "user": 4
+        },
+        "model": "qa.answer",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "api_key": "AIzaSyAhHFLP8znzmSe_mXuAzglYT8",
+            "name": "alpha"
+        },
+        "model": "qa.tenant",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "api_key": "ZIzaSyAhHFLP8znzmSe_mXuAzglYT8",
+            "name": "beta"
+        },
+        "model": "qa.tenant",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "api_key": "ByzaSyAhHFLP8znzmSe_mXuAzglYT8",
+            "name": "gamma"
+        },
+        "model": "qa.tenant",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "day": "2017-09-05",
+            "hits": 0,
+            "path": "/api/v1/qna/AIzaSyAhHFLP8znzmS",
+            "tenant": 1
+        },
+        "model": "qa.apihitslog",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "day": "2017-09-05",
+            "hits": 25,
+            "path": "/api/v1/qna/AIzaSyAhHFLP8znzmSe_mXuAzglYT8/",
+            "tenant": 1
+        },
+        "model": "qa.apihitslog",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "codename": "add_logentry",
+            "content_type": 1,
+            "name": "Can add log entry"
+        },
+        "model": "auth.permission",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "codename": "change_logentry",
+            "content_type": 1,
+            "name": "Can change log entry"
+        },
+        "model": "auth.permission",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "codename": "delete_logentry",
+            "content_type": 1,
+            "name": "Can delete log entry"
+        },
+        "model": "auth.permission",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "codename": "add_permission",
+            "content_type": 2,
+            "name": "Can add permission"
+        },
+        "model": "auth.permission",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "codename": "change_permission",
+            "content_type": 2,
+            "name": "Can change permission"
+        },
+        "model": "auth.permission",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "codename": "delete_permission",
+            "content_type": 2,
+            "name": "Can delete permission"
+        },
+        "model": "auth.permission",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "codename": "add_group",
+            "content_type": 3,
+            "name": "Can add group"
+        },
+        "model": "auth.permission",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "codename": "change_group",
+            "content_type": 3,
+            "name": "Can change group"
+        },
+        "model": "auth.permission",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "codename": "delete_group",
+            "content_type": 3,
+            "name": "Can delete group"
+        },
+        "model": "auth.permission",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "codename": "add_user",
+            "content_type": 4,
+            "name": "Can add user"
+        },
+        "model": "auth.permission",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "codename": "change_user",
+            "content_type": 4,
+            "name": "Can change user"
+        },
+        "model": "auth.permission",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "codename": "delete_user",
+            "content_type": 4,
+            "name": "Can delete user"
+        },
+        "model": "auth.permission",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "codename": "add_contenttype",
+            "content_type": 5,
+            "name": "Can add content type"
+        },
+        "model": "auth.permission",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "codename": "change_contenttype",
+            "content_type": 5,
+            "name": "Can change content type"
+        },
+        "model": "auth.permission",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "codename": "delete_contenttype",
+            "content_type": 5,
+            "name": "Can delete content type"
+        },
+        "model": "auth.permission",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "codename": "add_session",
+            "content_type": 6,
+            "name": "Can add session"
+        },
+        "model": "auth.permission",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "codename": "change_session",
+            "content_type": 6,
+            "name": "Can change session"
+        },
+        "model": "auth.permission",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "codename": "delete_session",
+            "content_type": 6,
+            "name": "Can delete session"
+        },
+        "model": "auth.permission",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "codename": "add_player",
+            "content_type": 7,
+            "name": "Can add player"
+        },
+        "model": "auth.permission",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "codename": "change_player",
+            "content_type": 7,
+            "name": "Can change player"
+        },
+        "model": "auth.permission",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "codename": "delete_player",
+            "content_type": 7,
+            "name": "Can delete player"
+        },
+        "model": "auth.permission",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "codename": "add_gamemoves",
+            "content_type": 8,
+            "name": "Can add game moves"
+        },
+        "model": "auth.permission",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "codename": "change_gamemoves",
+            "content_type": 8,
+            "name": "Can change game moves"
+        },
+        "model": "auth.permission",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "codename": "delete_gamemoves",
+            "content_type": 8,
+            "name": "Can delete game moves"
+        },
+        "model": "auth.permission",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "codename": "add_question",
+            "content_type": 9,
+            "name": "Can add question"
+        },
+        "model": "auth.permission",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "codename": "change_question",
+            "content_type": 9,
+            "name": "Can change question"
+        },
+        "model": "auth.permission",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "codename": "delete_question",
+            "content_type": 9,
+            "name": "Can delete question"
+        },
+        "model": "auth.permission",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "codename": "add_answer",
+            "content_type": 10,
+            "name": "Can add answer"
+        },
+        "model": "auth.permission",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "codename": "change_answer",
+            "content_type": 10,
+            "name": "Can change answer"
+        },
+        "model": "auth.permission",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "codename": "delete_answer",
+            "content_type": 10,
+            "name": "Can delete answer"
+        },
+        "model": "auth.permission",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "codename": "add_tenant",
+            "content_type": 11,
+            "name": "Can add tenant"
+        },
+        "model": "auth.permission",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "codename": "change_tenant",
+            "content_type": 11,
+            "name": "Can change tenant"
+        },
+        "model": "auth.permission",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "codename": "delete_tenant",
+            "content_type": 11,
+            "name": "Can delete tenant"
+        },
+        "model": "auth.permission",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "codename": "add_qauser",
+            "content_type": 12,
+            "name": "Can add qa user"
+        },
+        "model": "auth.permission",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "codename": "change_qauser",
+            "content_type": 12,
+            "name": "Can change qa user"
+        },
+        "model": "auth.permission",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "codename": "delete_qauser",
+            "content_type": 12,
+            "name": "Can delete qa user"
+        },
+        "model": "auth.permission",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "codename": "add_apihitslog",
+            "content_type": 13,
+            "name": "Can add api hits log"
+        },
+        "model": "auth.permission",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "codename": "change_apihitslog",
+            "content_type": 13,
+            "name": "Can change api hits log"
+        },
+        "model": "auth.permission",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "codename": "delete_apihitslog",
+            "content_type": 13,
+            "name": "Can delete api hits log"
+        },
+        "model": "auth.permission",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "date_joined": "2017-09-04T18:16:18.710Z",
+            "email": "admin@localhost.com",
+            "first_name": "",
+            "groups": [],
+            "is_active": true,
+            "is_staff": true,
+            "is_superuser": true,
+            "last_login": "2017-09-04T18:16:31.059Z",
+            "last_name": "",
+            "password": "pbkdf2_sha256$20000$S2C4Zg0g9O6V$aOpLLxOIUq4rLaEViOt3NGRWDraqgm5IyBZGItswiBI=",
+            "user_permissions": [],
+            "username": "admin"
+        },
+        "model": "auth.user",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "date_joined": "2017-09-04T18:20:35Z",
+            "email": "",
+            "first_name": "",
+            "groups": [],
+            "is_active": true,
+            "is_staff": true,
+            "is_superuser": false,
+            "last_login": null,
+            "last_name": "",
+            "password": "pbkdf2_sha256$20000$c1BAkkMwSQkZ$C66jF6nAmb5SRVjM9U5r+8uav9ncjyOjGfei1+yr6Qc=",
+            "user_permissions": [],
+            "username": "Amit"
+        },
+        "model": "auth.user",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "date_joined": "2017-09-04T18:20:48.183Z",
+            "email": "",
+            "first_name": "",
+            "groups": [],
+            "is_active": true,
+            "is_staff": false,
+            "is_superuser": false,
+            "last_login": null,
+            "last_name": "",
+            "password": "pbkdf2_sha256$20000$F6ffsCYn43PF$dYyCpp/qt20Txr7W6jyc9IETVgkFEUK+lZ9NHyOC1Wc=",
+            "user_permissions": [],
+            "username": "Yousuf"
+        },
+        "model": "auth.user",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "date_joined": "2017-09-04T18:21:14.806Z",
+            "email": "",
+            "first_name": "",
+            "groups": [],
+            "is_active": true,
+            "is_staff": false,
+            "is_superuser": false,
+            "last_login": null,
+            "last_name": "",
+            "password": "pbkdf2_sha256$20000$RGJeEUlrANc3$Ji8tCFip8N0d+lLJv5GrhiM55pEKxjuWavI4sH414FM=",
+            "user_permissions": [],
+            "username": "Rochelle"
+        },
+        "model": "auth.user",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "date_joined": "2017-09-04T18:22:05.674Z",
+            "email": "",
+            "first_name": "",
+            "groups": [],
+            "is_active": true,
+            "is_staff": false,
+            "is_superuser": false,
+            "last_login": null,
+            "last_name": "",
+            "password": "pbkdf2_sha256$20000$J0dq1nmu9H2h$8fQoN0tMX8azYlumudtE+sVtH5jfMrkV1j8dRAZbtkM=",
+            "user_permissions": [],
+            "username": "Ron"
+        },
+        "model": "auth.user",
+        "pk": 5
+    },
+    {
+        "fields": {
             "auth_user": 2,
             "name": "Amit"
         },
@@ -33,314 +936,613 @@
     },
     {
         "fields": {
-            "private": true,
-            "title": "Why are fish so easy to weigh?",
-            "user_id": 1
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:20:35.508Z",
+            "change_message": "",
+            "content_type": 4,
+            "object_id": "2",
+            "object_repr": "Amit",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 1
     },
     {
         "fields": {
-            "private": true,
-            "title": "How you know that you are flying with a \"no frills\" airline?",
-            "user_id": 2
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:20:48.284Z",
+            "change_message": "",
+            "content_type": 4,
+            "object_id": "3",
+            "object_repr": "Yousuf",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 2
     },
     {
         "fields": {
-            "private": true,
-            "title": "Why do \"no frills\" airlines never show movies on their flights?",
-            "user_id": 3
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:21:14.907Z",
+            "change_message": "",
+            "content_type": 4,
+            "object_id": "4",
+            "object_repr": "Rochelle",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 3
     },
     {
         "fields": {
-            "private": true,
-            "title": "On a turkey, which side would you find most feathers?",
-            "user_id": 4
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:22:05.778Z",
+            "change_message": "",
+            "content_type": 4,
+            "object_id": "5",
+            "object_repr": "Ron",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 4
     },
     {
         "fields": {
-            "private": true,
-            "title": "Why is that all cats dislike flying saucers?",
-            "user_id": 2
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:22:59.705Z",
+            "change_message": "",
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "QaUser object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 5
     },
     {
         "fields": {
-            "private": true,
-            "title": "If a cat has nine lives, what has more?",
-            "user_id": 4
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:23:06.173Z",
+            "change_message": "",
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "QaUser object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 6
     },
     {
         "fields": {
-            "private": true,
-            "title": "Which ballet do pigs like best?",
-            "user_id": 3
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:23:15.480Z",
+            "change_message": "",
+            "content_type": 12,
+            "object_id": "3",
+            "object_repr": "QaUser object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 7
     },
     {
         "fields": {
-            "private": true,
-            "title": "What is the big difference between chopped pork and pea soup?",
-            "user_id": 1
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:23:22.632Z",
+            "change_message": "",
+            "content_type": 12,
+            "object_id": "4",
+            "object_repr": "QaUser object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 8
     },
     {
         "fields": {
-            "private": true,
-            "title": "Why is it that we don't eat clowns?",
-            "user_id": 4
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:37:03.554Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 9
     },
     {
         "fields": {
-            "private": true,
-            "title": "If you saw two cowboys in a kitchen, which would be the real one?",
-            "user_id": 1
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:37:22.304Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 10
     },
     {
         "fields": {
-            "private": true,
-            "title": "Where would you find a dog with one leg?",
-            "user_id": 3
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:37:31.691Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 11
     },
     {
         "fields": {
-            "private": true,
-            "title": "Why did the room packed with married people seem empty?",
-            "user_id": 1
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:37:39.269Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 12
     },
     {
         "fields": {
-            "private": true,
-            "title": "What's the difference between a pessimist and a magnet?",
-            "user_id": 2
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:37:48.962Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "5",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 13
     },
     {
         "fields": {
-            "private": true,
-            "title": "What is the longest sentence that a man knows?",
-            "user_id": 3
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:37:58.964Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "6",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 14
     },
     {
         "fields": {
-            "private": true,
-            "title": "What do you call a chicken that is crossing the road?",
-            "user_id": 4
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:38:13.024Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "7",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 15
     },
     {
         "fields": {
-            "private": true,
-            "title": "What is a quicker way to transfer money than electronic banking?",
-            "user_id": 4
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:38:29.161Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "8",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.question",
+        "model": "admin.logentry",
         "pk": 16
     },
     {
         "fields": {
-            "body": "Because they have their own scales",
-            "question_id": 1,
-            "user_id": 2
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:38:38.602Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "9",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.answer",
-        "pk": 1
-    },
-    {
-        "fields": {
-            "body": "You need to have the correct change to board the plane.",
-            "question_id": 2,
-            "user_id": 4
-        },
-        "model": "qa.answer",
-        "pk": 2
-    },
-    {
-        "fields": {
-            "body": "They don't need to. You keep seeing your life flashing before your very eyes.",
-            "question_id": 3,
-            "user_id": 2
-        },
-        "model": "qa.answer",
-        "pk": 4
-    },
-    {
-        "fields": {
-            "body": "The outside",
-            "question_id": 4,
-            "user_id": 1
-        },
-        "model": "qa.answer",
-        "pk": 5
-    },
-    {
-        "fields": {
-            "body": "Because it is impossible for them to reach the milk.",
-            "question_id": 5,
-            "user_id": 4
-        },
-        "model": "qa.answer",
-        "pk": 6
-    },
-    {
-        "fields": {
-            "body": "A frog - it croaks every day.",
-            "question_id": 6,
-            "user_id": 4
-        },
-        "model": "qa.answer",
-        "pk": 8
-    },
-    {
-        "fields": {
-            "body": "Swine Lake.",
-            "question_id": 7,
-            "user_id": 3
-        },
-        "model": "qa.answer",
-        "pk": 9
-    },
-    {
-        "fields": {
-            "body": "Everybody can chop pork but everyone can't pea soup.",
-            "question_id": 8,
-            "user_id": 4
-        },
-        "model": "qa.answer",
-        "pk": 10
-    },
-    {
-        "fields": {
-            "body": "They taste funny",
-            "question_id": 9,
-            "user_id": 1
-        },
-        "model": "qa.answer",
-        "pk": 11
-    },
-    {
-        "fields": {
-            "body": "The one stood by the range.",
-            "question_id": 10,
-            "user_id": 4
-        },
-        "model": "qa.answer",
-        "pk": 12
-    },
-    {
-        "fields": {
-            "body": "Exactly where you had left it.",
-            "question_id": 11,
-            "user_id": 2
-        },
-        "model": "qa.answer",
-        "pk": 13
-    },
-    {
-        "fields": {
-            "body": "Because there wasn't a single person there.",
-            "question_id": 12,
-            "user_id": 4
-        },
-        "model": "qa.answer",
-        "pk": 14
-    },
-    {
-        "fields": {
-            "body": "A magnet has a positive side.",
-            "question_id": 13,
-            "user_id": 4
-        },
-        "model": "qa.answer",
-        "pk": 15
-    },
-    {
-        "fields": {
-            "body": "I do.",
-            "question_id": 14,
-            "user_id": 2
-        },
-        "model": "qa.answer",
-        "pk": 16
-    },
-    {
-        "fields": {
-            "body": "Poultry in motion",
-            "question_id": 15,
-            "user_id": 4
-        },
-        "model": "qa.answer",
+        "model": "admin.logentry",
         "pk": 17
     },
     {
         "fields": {
-            "body": "Marriage.",
-            "question_id": 16,
-            "user_id": 2
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:38:46.282Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "10",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.answer",
+        "model": "admin.logentry",
         "pk": 18
     },
     {
         "fields": {
-            "api_key": "AIzaSyAhHFLP8znzmSe_mXuAzglYT8",
-            "name": "alpha"
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:38:53.783Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "11",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.tenant",
-        "pk": 1
+        "model": "admin.logentry",
+        "pk": 19
     },
     {
         "fields": {
-            "api_key": "ZIzaSyAhHFLP8znzmSe_mXuAzglYT8",
-            "name": "beta"
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:39:03.677Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "12",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.tenant",
-        "pk": 2
+        "model": "admin.logentry",
+        "pk": 20
     },
     {
         "fields": {
-            "api_key": "ByzaSyAhHFLP8znzmSe_mXuAzglYT8",
-            "name": "gamma"
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:39:15.762Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "13",
+            "object_repr": "Question object",
+            "user": 1
         },
-        "model": "qa.tenant",
-        "pk": 3
+        "model": "admin.logentry",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:39:22.773Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "14",
+            "object_repr": "Question object",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:39:31.462Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "15",
+            "object_repr": "Question object",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:39:38.702Z",
+            "change_message": "",
+            "content_type": 9,
+            "object_id": "16",
+            "object_repr": "Question object",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:41:29.864Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "Rochelle - Because they have their own scales",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:41:44.954Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Yousuf - You need to have the correct change to board the plane.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:42:31.490Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "Rochelle - They don't need to. You keep seeing your life flashing before your very eyes.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:42:41.533Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "5",
+            "object_repr": "Amit - The outside",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:42:56.396Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "6",
+            "object_repr": "Yousuf - Because it is impossible for them to reach the milk.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:43:21.112Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "8",
+            "object_repr": "Yousuf - A frog - it croaks every day.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:43:30.944Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "9",
+            "object_repr": "Ron - Swine Lake.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:43:47.999Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "10",
+            "object_repr": "Yousuf - Everybody can chop pork but everyone can't pea soup.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:44:10.215Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "11",
+            "object_repr": "Amit - They taste funny",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:44:23.666Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "12",
+            "object_repr": "Yousuf - The one stood by the range.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:44:42.354Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "13",
+            "object_repr": "Rochelle - Exactly where you had left it.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:44:56.317Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "14",
+            "object_repr": "Yousuf - Because there wasn't a single person there.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:45:09.892Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "15",
+            "object_repr": "Yousuf - A magnet has a positive side.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:45:26.099Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "16",
+            "object_repr": "Rochelle - I do.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:45:43.230Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "17",
+            "object_repr": "Yousuf - Poultry in motion",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:46:00.671Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "18",
+            "object_repr": "Rochelle - Marriage.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:54:45.182Z",
+            "change_message": "",
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "Tenant object",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T18:54:52.288Z",
+            "change_message": "",
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "Tenant object",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T19:05:39.291Z",
+            "change_message": "",
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "Tenant object",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2017-09-04T19:07:05.609Z",
+            "change_message": "Changed is_staff.",
+            "content_type": 4,
+            "object_id": "2",
+            "object_repr": "Amit",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2017-09-04T19:26:20.263Z",
+            "change_message": "Changed private.",
+            "content_type": 9,
+            "object_id": "13",
+            "object_repr": "Rochelle - What's the difference between a pessimist and a magnet?",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T19:27:09.447Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "19",
+            "object_repr": "Q:What's the difference between a pessimist and a magnet? | A:Dont know",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 46
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2017-09-04T19:27:22.825Z",
+            "change_message": "",
+            "content_type": 10,
+            "object_id": "20",
+            "object_repr": "Q:What's the difference between a pessimist and a magnet? | A:Go figure.",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 47
     }
 ]

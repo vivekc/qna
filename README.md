@@ -20,3 +20,12 @@ User table consist of name
 # Populated data:
 1. Added data using django admin interface and
 2. python manage.py dumpdata qa |  python -m json.tool > qa/fixtures/initial.json
+
+# How to Setup:
+1. pip install -r requirements.txt
+2. Change database credentials in settings.py
+3. python manage.py makemigrations
+4. python manage.py migrate
+5. python manage.py loaddata qa/fixtures/initial.json
+6. python manage.py runserver
+7. http://localhost:8000

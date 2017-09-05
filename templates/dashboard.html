@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>QnA - Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}"/>
+    <script type="text/javascript" src="{% static 'js/jquery-1.11.3.js' %}"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+
+            </button>
+            <a class="navbar-brand" href="#">Question and Answers</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Dashboard</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block content %}
+<div class="container">
+
+    <div style="text-align:center; margin-top:100px"><h2>Total Users:{{ user_count }}</h2></div>
+    <!-- QA Section -->
+    <table class="table-striped table-bordered mytable" name="summary">
+        <thead>
+        <th colspan="3" class="heading"><b>Questions and Answers</b></th>
+        </thead>
+        {% for qa in qna %}
+        <tr>
+            <td class="width20" data-toggle="collapse" data-target="#demo"><b>{{ qa.user_name }}:</b></td>
+            <td class="width50">{{ qa.title }}</td>
+        </tr>
+        <tr>
+            <td class="width20"></td>
+
+            <td class="width90">
+                <table class="table">
+                {% for answer in qa.answers%}
+                <tr>
+                    <td class="width20"><b>{{ answer.user_name }}:</b></td>
+                    <td class="width90">{{ answer.answer }} </td>
+                </tr>
+                {% endfor %}
+                </table>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <!-- API Hits Section -->
+    <table class="table-striped table-bordered mytable" name="api summary">
+        <thead>
+            <th colspan="3" class="heading">API Hit Counts</th>
+        </thead>
+        {% for tenant in tenant_api_counts %}
+            <tr>
+                <td class="width30">{{ tenant.name }}</td>
+                <td class="width30">{{ tenant.day }}</td>
+                <td class="width20">{{ tenant.count }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
+</body>
+</html>

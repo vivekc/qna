@@ -63,4 +63,4 @@ class APIHitsLog(models.Model):
     tenant = models.ForeignKey(to=Tenant)
     path = models.CharField(max_length=100)
     day = models.DateField(default=datetime.now().date())
-    hits_today = models.IntegerField(default=0)
+    hits = models.IntegerField(default=0)

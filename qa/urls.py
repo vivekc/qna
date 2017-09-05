@@ -7,4 +7,9 @@ urlpatterns = [
         views.Questionnaire.as_view(),
         name='get_qna'
     ),
+    url(
+        r'^',
+        views.Dashboard.as_view(),
+        name='view_dashboard'
+    ),
 ]

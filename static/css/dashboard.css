@@ -1,0 +1,28 @@
+.width50 {
+    width: 50%;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.width20 {
+    width: 20%;
+}
+
+.width90 {
+    width: 90%;
+}
+
+.heading {
+    color: #934;
+    padding-bottom:20px;
+}
+
+.mytable {
+    max-width:600px;
+    max-height:300px;
+    height:300px;
+    overflow:auto;
+    margin:50px auto;
+}

@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -23,10 +25,10 @@ class Question(models.Model):
 
     title = models.CharField(max_length=200)
     private = models.BooleanField(default=False)
-    user_id = models.ForeignKey(to=QaUser)
+    user = models.ForeignKey(to=QaUser)
 
     def __str__(self):
-        return "{} - {}".format(self.user_id.name, self.title)
+        return "{} - {}".format(self.user.name, self.title)
 
 
 class Answer(models.Model):
@@ -36,7 +38,7 @@ class Answer(models.Model):
 
     body = models.CharField(max_length=300)
     question_id = models.ForeignKey(to=Question)
-    user_id = models.ForeignKey(to=QaUser)
+    user = models.ForeignKey(to=QaUser)
 
     def __str__(self):
         return "Q:{} | A:{}".format(self.question_id.title, self.body)
@@ -52,3 +54,13 @@ class Tenant(models.Model):
 
     def __str__(self):
         return "{} : {}".format(self.name, self.api_key)
+
+
+class APIHitsLog(models.Model):
+    class Meta:
+        db_table = 'api_hits_log'
+
+    tenant = models.ForeignKey(to=Tenant)
+    path = models.CharField(max_length=100)
+    day = models.DateField(default=datetime.now().date())
+    hits_today = models.IntegerField(default=0)

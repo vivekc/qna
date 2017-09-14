@@ -118,3 +118,10 @@ REST_FRAMEWORK = {
         'sustained': '6/min'
     }
 }
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'my_cache_table',
+    }
+}

@@ -105,9 +105,9 @@ class Dashboard(View):
         user_count = QaUser.objects.count()
         questions = Question.objects.all()
         qna = [get_question_answers(question) for question in questions]
-        tenant_api_counts = [{'name':api_log.tenant.name,
+        tenant_api_counts = [{'name': api_log.tenant.name,
                               'day': api_log.day,
-                              'count':api_log.hits} for api_log in APIHitsLog.objects.all()
+                              'count': api_log.hits} for api_log in APIHitsLog.objects.all()
                              ]
         context = dict(user_count = user_count, qna=qna, tenant_api_counts=tenant_api_counts)
         return render(request, self.template_name, context)

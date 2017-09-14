@@ -26,6 +26,8 @@ User table consist of name
 2. Change database credentials in settings.py
 3. python manage.py makemigrations
 4. python manage.py migrate
-5. python manage.py loaddata qa/fixtures/initial.json
-6. python manage.py runserver
-7. http://localhost:8000
+5. python manage.py createcachetable # optional, to setup caching
+6. python manage.py loaddata qa/fixtures/initial.json
+7. python manage.py runserver
+8. http://localhost:8000
+
